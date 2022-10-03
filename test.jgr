@@ -1,0 +1,189 @@
+newgraph 
+xaxis min 0 max 10 nodraw
+yaxis min 0 max 10 nodraw
+
+(* Background of Tower *)
+newline poly pcfill 1 .35 0 color 0 0 0
+   pts 1 1.5  5 1  5 20 1 20
+
+(* Rail Line *)
+newline linethickness 6
+   pts 3 2  3 19
+
+(* Red Base *)
+newline poly pcfill 1 0 0 color 0 0 0
+   pts 0 0  6 0   5.5 1  0.5 1
+
+newline poly pcfill .85 0 0 color 0 0 0
+   pts 0.5 1  5.5 1  5 1.5  1 1.5
+
+
+
+(* Gold Base *)
+newline bezier poly pcfill .75 .75 0 color .75 .75 0 pts
+  1 1.25   2.5 1   4 1    5 1.25
+
+newline poly pcfill .75 .75 0 color .75 .75 0
+   pts 1 1.25   5 1.25   5 2    1 2
+
+newline bezier pts
+  1 1.25   2.5 1   4 1    5 1.25
+
+newline
+   pts 1 1.25 1 2
+
+newline
+   pts 5 1.25 5 2
+
+newline bezier poly pcfill .85 .85 0 color .85 .85 0 pts
+  1 2   2.5 1.75   4 1.75    5 2
+
+newline bezier poly pcfill .85 .85 0 color .85 .85 0 pts
+  1 2   2.5 2.25   4 2.25    5 2
+
+newline bezier pts
+  1 2   2.5 1.75   4 1.75    5 2
+
+newline bezier pts
+   1 2   2.5 2.25   4 2.25    5 2
+
+
+
+(* Black Target *)
+newline bezier poly pcfill .2 .2 .2 color .2 .2 .2 pts
+  2 2   2.6666 1.85   3.3333 1.85    4 2
+
+newline poly pcfill .2 .2 .2 color .2 .2 .2
+   pts 2 2  4 2   4 2.75    2 2.75
+
+newline bezier 
+  pts 2 2   2.6666 1.85   3.3333 1.85   4 2
+
+newline
+   pts 2 2  2 2.75
+
+newline
+   pts 4 2  4 2.75
+
+newline bezier poly pcfill .3 .3 .3 color .3 .3 .3 pts
+  2 2.75   2.6666 2.6   3.3333 2.6    4 2.75
+
+newline bezier poly pcfill .3 .3 .3 color .3 .3 .3 pts
+  2 2.75   2.6666 2.9   3.3333 2.9    4 2.75
+
+newline bezier pts
+  2 2.75   2.6666 2.6   3.3333 2.6    4 2.75
+
+newline bezier pts
+   2 2.75   2.6666 2.9   3.3333 2.9    4 2.75
+
+(*
+newstring hjl vjb fontsize 30 
+          font Courier rotate 90 x 2 y 3.5 : Test Your Strength
+*)
+
+
+(* Lines Right *)
+newline linethickness 3
+   pts 3.5 4.5  4.5 4.5
+
+newline linethickness 3
+   pts 3.5 7.1  4.5 7.1
+
+newline linethickness 3
+   pts 3.5 9.7  4.5 9.7
+
+newline linethickness 3
+   pts 3.5 12.3  4.5 12.3
+
+newline linethickness 3
+   pts 3.5 14.9  4.5 14.9
+
+newline linethickness 3
+   pts 3.5 17.5  4.5 17.5
+
+(* Lines Left *)
+newline linethickness 3
+   pts 1.5 4.5  2.5 4.5
+
+newline linethickness 3
+   pts 1.5 7.1  2.5 7.1
+
+newline linethickness 3
+   pts 1.5 9.7  2.5 9.7
+
+newline linethickness 3
+   pts 1.5 12.3  2.5 12.3
+
+newline linethickness 3
+   pts 1.5 14.9  2.5 14.9
+
+newline linethickness 3
+   pts 1.5 17.5  2.5 17.5
+
+
+(* Signs *)
+newline linethickness 8
+   pts 0 4.5  1 4.5
+newcurve marktype box marksize 3.5 2 
+         linetype solid cfill 1 .5 0
+         pts -1 4.5
+newstring hjl vjb fontsize 20 
+          font Courier x -2.1 y 4.25 : Wimp
+
+newline linethickness 8
+   pts 5 7.1  6 7.1
+newcurve marktype box marksize 3.5 2 
+         linetype solid cfill 1 .5 0
+         pts 7 7.1
+newstring hjl vjb fontsize 13 
+          font Courier x 5.5 y 6.9 : Really...
+
+newline linethickness 8
+   pts 0 9.7  1 9.7
+newcurve marktype box marksize 3.5 2 
+         linetype solid cfill 1 .5 0
+         pts -1 9.7
+newstring hjl vjb fontsize 12 
+          font Courier x -2.5 y 9.75 : Now We're
+newstring hjl vjb fontsize 12 
+          font Courier x -2.1 y 9.25 : Talking
+
+newline linethickness 8
+   pts 5 12.3  6 12.3
+newcurve marktype box marksize 3.5 2 
+         linetype solid cfill 1 .5 0
+         pts 7 12.3
+newstring hjl vjb fontsize 15 
+          font Courier x 6.0 y 12.5 : Keep
+newstring hjl vjb fontsize 15 
+          font Courier x 5.8 y 12 : Going!
+
+newline linethickness 8
+   pts 0 14.9  1 14.9
+newcurve marktype box marksize 3.5 2 
+         linetype solid cfill 1 .5 0
+         pts -1 14.9
+newstring hjl vjb fontsize 15 
+          font Courier x -2.2 y 15 : Almost
+newstring hjl vjb fontsize 15 
+          font Courier x -2.2 y 14.5 : There!
+
+newline linethickness 8
+   pts 5 17.5  6 17.5
+newcurve marktype box marksize 3.5 2 
+         linetype solid cfill 1 .5 0
+         pts 7 17.5
+newstring hjl vjb fontsize 13 
+          font Courier x 5.4 y 17.3 : Strongman
+
+(* Bell *)
+newcurve marktype ellipse marksize 4.5 4.5 cfill .85 .85 0
+   pts 3 19.75
+
+newcurve marktype ellipse marksize 1.5 1.5 cfill .95 .95 0
+   pts 3 19.75
+
+(* Score Background *)
+newline poly pcfill 0 0 0 color 0 0 0
+   pts 2 0  4 0  4 1  2 1
