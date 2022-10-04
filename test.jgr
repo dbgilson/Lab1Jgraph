@@ -77,11 +77,6 @@ newline bezier pts
 newline bezier pts
    2 2.75   2.6666 2.9   3.3333 2.9    4 2.75
 
-(*
-newstring hjl vjb fontsize 30 
-          font Courier rotate 90 x 2 y 3.5 : Test Your Strength
-*)
-
 
 (* Lines Right *)
 newline linethickness 3
