@@ -16,3 +16,4 @@ However, with this next image, I have exactly 50!:
 
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/73197003/193711445-99643fbe-cf3d-4010-986c-f2c69a01f41b.png">
 
+If I had time to make improvements, I would like to add more "3D" shapes to the graph, as that will make it more interesting/complex.  I also wish that jgraph allowed for some sort of animation implementation, as having that would be fun for something like swinging the hammer down or seeing the rod go up.  Overall, I enjoyed the lab, even if what I accomplished wasn't necessarily a difficult implementation of jgraph.
